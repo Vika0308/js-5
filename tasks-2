@@ -13,9 +13,7 @@ function warnTheSheep(queue) {
 
 class SmallestIntegerFinder {
   findSmallestInt(args) {
-    let arr = args;
-    const min = Math.min(...arr);
-     return min;
+    return Math.min(...args);
   }
 }
 
