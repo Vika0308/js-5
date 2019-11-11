@@ -1,0 +1,56 @@
+1. //https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript
+
+function warnTheSheep(queue) {
+  if (queue[queue.length -1] === 'wolf') {
+     return 'Pls go away and stop eating my sheep';
+  } else {
+     let warn = queue.findIndex((i) => i == 'wolf' ); 
+      return `Oi! Sheep number ${queue.length - warn - 1}! You are about to be eaten by a wolf!`;
+  }
+}
+
+2. //https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    let arr = args;
+    const min = Math.min(...arr);
+     return min;
+  }
+}
+
+3. //https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
+
+function DNAtoRNA(dna) {
+  for (let i = 0; i < dna.length; i++)
+  {
+   dna = dna.replace('T', 'U');
+  }
+   return dna;
+}
+
+4. //https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
+
+function stringToArray(string){
+  let str = 'I love arrays they are my favorite';
+  let arr = str.split(' ');
+   return arr;
+}
+
+5. //https://www.codewars.com/kata/beginner-lost-without-a-map/train/javascript
+
+function maps(x) {
+  let arr = x.map(x => x * 2);
+   return arr;
+}
+
+6. //https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
+
+function firstNonConsecutive (arr) {
+  for (let i=0; i< arr.length-1; i++) {
+    if (arr[i + 1] !== arr[i] + 1) {
+     return arr[i + 1];
+    } 
+  }
+  return null;
+}
