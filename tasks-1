@@ -1,0 +1,42 @@
+1. // https://www.codewars.com/kata/opposite-number/train/javascript
+
+function opposite(number) {
+  return - number;
+}
+
+2. // https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
+
+function greet (name, owner) {
+    if (name == owner) {
+       return("Hello boss");
+    }
+    else {
+       return("Hello guest")
+    }
+}
+
+3. // https://www.codewars.com/kata/keep-hydrated-1/train/javascript
+
+function litres(time) {
+  let ltr = time * 0.5; 
+  ltr = ltr - ltr % 1; 
+   return ltr;
+}
+
+4. // https://www.codewars.com/kata/grasshopper-terminal-game-move-function/train/javascript
+
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
+
+5. // https://www.codewars.com/kata/grasshopper-terminal-game-move-function/train/javascript
+
+function move (position, roll) {
+  return position + (roll * 2);
+}
+
+6. // https://www.codewars.com/kata/be-concise-i-the-ternary-operator/train/javascript
+
+function describeAge(age) {
+  return "You're a(n) " + (age <= 12 ? 'kid' : age <= 17 ? 'teenager' : age <= 64 ? 'adult' : 'elderly');
+}
