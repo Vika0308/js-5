@@ -33,9 +33,9 @@ function whatNumberIsIt(n){
 
 function giveMeFive(obj){
 let five=[];
-  for (let key in obj) {
-    if (key.length==5) five.push(key);
-      if (obj[key].length==5) five.push(obj[key]);
+for (let key in obj) {
+  if (key.length==5) five.push(key);
+    if (obj[key].length==5) five.push(obj[key]);
   }
   return five;
 }
@@ -44,10 +44,10 @@ let five=[];
 
 function buildFun(n){
  let search = [];
-  for (let i = 0; i< n; i++){
-    search.push(function(){
-      return i;
-    });
-  }
-    return search;
+ for (let i = 0; i< n; i++){
+   search.push(function(){
+     return i;
+   });
+ }
+   return search;
 }
